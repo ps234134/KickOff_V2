@@ -1,0 +1,101 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+:root{
+  --black: #000;
+  --white: #fff;
+  --darker-purple: #150050;
+  --dark-purple: #3F0071;
+  --lighter-purple: #610094;
+  --main-bg:#F7F7F7;
+  --lighter-orange: #FFF4CF;
+  --light-orange:#FFCB42;
+  --orange:#FFB200;
+  --blue:#277BC0;
+  --dark-blue:#035190;
+
+}
+
+
+
+
+ /*--------------------------------------------------------------
+  # Back to top button
+  --------------------------------------------------------------*/
+  .back-to-top {
+   position: fixed;
+   visibility: hidden;
+   opacity: 0;
+   right: 15px;
+   bottom: 15px;
+   z-index: 9999;
+   background: var(--blue);
+   width: 40px;
+   height: 40px;
+   border-radius: 50px;
+   transition: all 0.4s;
+ }
+ .back-to-top i {
+   font-size: 28px;
+   color: var(--white);
+   line-height: 0;
+ }
+ .back-to-top:hover {
+   background: var(--dark-blue);
+   color: var(--white);
+ }
+ .back-to-top.active {
+   visibility: visible;
+   opacity: 1;
+ }
+
+   /*--------------------------------------------------------------
+  # reveal fade in
+  --------------------------------------------------------------*/
+  .reveal{
+    position: relative;
+    z-index: 999;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+     /*--------------------------------------------------------------
+  # fade in progress for skills
+  --------------------------------------------------------------*/
+  .progress-bar{
+    background-color: var(--white);
+  }
+
+  .fade-in-progress {
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 20px 0;
+    border: 1px solid var(--black);
+    overflow: hidden;
+    position: relative;
+    
+  }
+  
+  .fade-in-progress span {
+    height: 100%;
+    display: block;
+    width: 0;
+    color: var(--white);
+    line-height: 30px;
+    position: absolute;
+    text-align: end;
+    padding-right: 5px;
+  }
+
+  .progress-bar span{
+    background-color: var(--dark-purple);
+  }
+
+  

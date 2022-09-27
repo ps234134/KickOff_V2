@@ -1,0 +1,491 @@
+@import url("https://use.typekit.net/lcd8aiq.css");
+
+@import url('http://fonts.cdnfonts.com/css/poppins');
+
+@import url('http://fonts.cdnfonts.com/css/om-botak');
+
+                
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+:root{
+  --black: #000;
+  --white: #fff;
+  --darker-purple: #150050;
+  --dark-purple: #3F0071;
+  --lighter-purple: #610094;
+  --main-bg:#F7F7F7;
+  --lighter-orange: #FFF4CF;
+  --light-orange:#FFCB42;
+  --orange:#FFB200;
+  --blue:#277BC0;
+  --dark-blue:#035190;
+
+}
+
+body,html{
+   font-family: "Poppins","Arial", sans-serif;
+   min-height: fit-content;
+   height: 100%;
+   background-color: #fff9e7;
+ }
+ 
+ @media (max-width: 500px) {
+  body,html{
+    margin: 0;
+  }
+}
+
+
+ 
+ h1, h2, h3, h4, h5, h6 {
+   font-family: "Om Botak","Arial", sans-serif;
+ }
+
+ 
+/*--------------------------------------------------------------
+# Hero
+--------------------------------------------------------------*/
+.hero{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 999;
+  background: url(../img/waves.png) top repeat-x;
+  background-size: contain;
+}
+
+.hero-main{
+  display: flex;
+  flex-direction: row;
+}
+
+.hero-main img{
+  width: 50%;
+  height: 70%;
+}
+
+.hero h1{
+  color:var(--black);
+  font-family: 'Om Botak', sans-serif;                                        
+  font-weight: bolder;
+  font-size: 2.5rem;
+}
+
+
+.kaart img{
+  width: 400px;
+}
+
+.card-btn {
+	box-shadow: 1px 10px 17px -9px #FFB200;
+	background:linear-gradient(to bottom, #FFCB42 5%, #FFCB42 100%);
+	background-color:#FFCB42;
+	border-radius:18px;
+	border:1px solid #277BC0;
+	display:inline-block;
+	cursor:pointer;
+	color:#277BC0;
+	font-size:16px;
+	font-weight:bold;
+	padding:14px 28px;
+	text-decoration:none;
+}
+.card-btn:hover {
+	background:linear-gradient(to bottom, #FFCB42 5%, #FFCB42 100%);
+	background-color:#FFCB42;
+}
+.card-btn:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+
+.hero-copy p{
+  text-align: end;
+  text-decoration: none;
+  padding: 16px;
+  color: var(--hero-h1);
+  font-size: 1em;
+}
+@media (max-width: 992px) {
+  .hero h1{
+   font-size: 1.4rem;
+  }
+}
+ @media (max-width: 500px) {
+
+  .hero-main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+  }
+
+
+
+}
+
+  
+  /*--------------------------------------------------------------
+  # about
+  --------------------------------------------------------------*/
+
+  #about{
+    height: 100vh;
+    z-index: 999;
+    margin: 50px 100px 0 100px;
+  }
+
+  
+
+
+  .about-main p{
+    z-index: 999;
+    margin: 30px 0 0 0;
+    position: relative;
+  }
+
+
+  .about-main a{
+    text-decoration: none;
+    color: var(--lighter-purple);
+  }
+  .about-main a:hover{
+    color: var(--dark-purple);
+  }
+
+  .about-main img{
+    border-radius: 100vw;
+    height: 300px;
+    width: 300px;
+    object-position: 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: 999;
+    float: right;
+  }
+  img{
+    max-width: 100%;
+  }
+
+
+  .about-row{
+    margin: 50px 0 0 0;
+  }
+
+  @media (max-width: 992px) {
+    #about{
+      margin: 100px 10px 0 10px;
+    }
+  }
+  
+
+  @media (max-width: 480px) {
+    #about{
+      margin: 100px 10px 0 10px;
+    }
+    .about-main img{
+      height: 200px;
+      width: 200px;
+      margin: 20px 0 0 0;
+    }
+    .about-main p{
+      margin: 20px 0 0 0;
+    }
+  }
+
+  /*--------------------------------------------------------------
+# card activation
+--------------------------------------------------------------*/
+.card-activation{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 999;
+  background: url(../img/waves.png) top repeat-x;
+  background-size: contain;
+}
+
+.card-activation-main{
+  display: flex;
+  flex-direction: row;
+}
+
+.card-activation-main img{
+  width: 50%;
+  height: 70%;
+  animation: fadeInUp 4s;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none; } }
+@-moz-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -moz-transform: translate3d(0, 50%, 0); }
+  100% {
+    opacity: 1;
+    -moz-transform: none; } }
+@-o-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -o-transform: translate3d(0, 50%, 0); }
+  100% {
+    opacity: 1;
+    -o-transform: none; } }
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50%, 0); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+.u--fadeInUp {
+  -webkit-animation: fadeInUp 1s ease-in;
+  -moz-animation: fadeInUp 1s ease-in;
+  -o-animation: fadeInUp 1s ease-in;
+  animation: fadeInUp 1s ease-in; }
+
+
+
+.card-activation h1{
+  color:var(--black);
+  font-family: 'Om Botak', sans-serif;                                        
+  font-weight: bolder;
+  font-size: 2.5rem;
+}
+
+
+.kaart img{
+  width: 400px;
+}
+
+.kaart button{
+  box-shadow: 1px 10px 17px -9px #FFB200;
+	background:linear-gradient(to bottom, #FFCB42 5%, #FFCB42 100%);
+	background-color:#FFCB42;
+	border-radius:18px;
+	border:1px solid #277BC0;
+	display:inline-block;
+	cursor:pointer;
+	color:#277BC0;
+	font-size:16px;
+	font-weight:bold;
+	padding:14px 28px;
+	text-decoration:none;
+  margin-top: 20px;
+}
+
+.kaart button a:hover {
+  background:linear-gradient(to bottom, #FFCB42 5%, #FFCB42 100%);
+background-color:#FFCB42;
+}
+
+.kaart button a{
+  text-decoration: none;
+}
+
+.card-btn {
+	box-shadow: 1px 10px 17px -9px #FFB200;
+	background:linear-gradient(to bottom, #FFCB42 5%, #FFCB42 100%);
+	background-color:#FFCB42;
+	border-radius:18px;
+	border:1px solid #277BC0;
+	display:inline-block;
+	cursor:pointer;
+	color:#277BC0;
+	font-size:16px;
+	font-weight:bold;
+	padding:14px 28px;
+	text-decoration:none;
+}
+.card-btn:hover {
+	background:linear-gradient(to bottom, #FFCB42 5%, #FFCB42 100%);
+	background-color:#FFCB42;
+}
+.card-btn:active {
+	position:relative;
+	top:1px;
+}
+
+.card-activation img{
+  margin-right: 80px;
+}
+
+.card-activation input[type="number"]{
+  
+  font-size: 32px;
+  border-radius: 6px;
+  line-height: 1.5;
+  padding: 5px 10px;
+  transition: box-shadow 100ms ease-in, border 100ms ease-in, background-color 100ms ease-in;
+  border: 2px solid #dee1e2;
+  color: rgb(14, 14, 16);
+  background: #dee1e2;
+  display: block;
+  height: 36px;
+}
+.card-activation input[type="number"]:hover {
+  border-color: var(--blue);
+}
+.card-activation input[type="number"]:focus{
+  border-color: var(--dark-blue);
+  background: var(--light-orange);
+}
+
+.card-activation input[type="button"]{
+  box-shadow: 1px 10px 17px -9px #FFB200;
+	background:linear-gradient(to bottom, #FFCB42 5%, #FFCB42 100%);
+	background-color:#FFCB42;
+	border-radius:6px;
+	border:1px solid #277BC0;
+	display:inline-block;
+	cursor:pointer;
+	color:#277BC0;
+	font-size:20px;
+	font-weight:bold;
+	padding:10  px 20px;
+	text-decoration:none;
+  margin-left: 12px;
+}
+
+.card-activation input[type="button"]:hover {
+	background:linear-gradient(to bottom, #FFCB42 5%, #FFCB42 100%);
+	background-color:#FFCB42;
+}
+.card-activation input[type="button"]:active {
+	position:relative;
+	top:1px;
+}
+
+
+.card-activation-copy p{
+  text-align: end;
+  text-decoration: none;
+  padding: 16px;
+  color: var(--hero-h1);
+  font-size: 1em;
+}
+@media (max-width: 992px) {
+  .card-activation h1{
+   font-size: 1.4rem;
+  }
+}
+ @media (max-width: 500px) {
+
+  .card-activation-main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+}
+
+ /*--------------------------------------------------------------
+# payment
+--------------------------------------------------------------*/
+  #payment{
+    height: 100vh;
+    z-index: 999;
+    margin: 100px 100px 0 100px;
+  }
+
+  .payment-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .payment-main img{
+    margin-top: 100px;
+  }                                           
+  
+  .payment-main button{
+    box-shadow: 1px 10px 17px -9px #FFB200;
+	background:linear-gradient(to bottom, #FFCB42 5%, #FFCB42 100%);
+	background-color:#FFCB42;
+	border-radius:18px;
+	border:1px solid #277BC0;
+	display:inline-block;
+	cursor:pointer;
+	color:#277BC0;
+	font-size:16px;
+	font-weight:bold;
+	padding:14px 28px;
+	text-decoration:none;
+  margin-top: 100px;
+  }
+  
+  .payment-main button:hover {
+    background:linear-gradient(to bottom, #FFCB42 5%, #FFCB42 100%);
+	background-color:#FFCB42;
+  }
+
+  .home a{
+    text-decoration: none;
+  }
+
+ /*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: var(--light-orange);
+  color: var(--black);
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+  bottom: 0;
+}
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+#footer h3 span{
+  color: var(--dark-blue);
+}
+#footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+#footer .social-links {
+  margin: 0 0 40px 0;
+}
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: var(--blue);
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+#footer .social-links a:hover {
+  background: var(--dark-blue);
+  color: #fff;
+  text-decoration: none;
+}
+#footer .copyright {
+  margin: 0 0 5px 0;
+}
+#footer .credits {
+  font-size: 13px;
+}

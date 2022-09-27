@@ -1,0 +1,71 @@
+:root{
+    --black: #000;
+    --white: #fff;
+    --darker-purple: #150050;
+    --dark-purple: #3F0071;
+    --lighter-purple: #610094;
+    --main-bg:#F7F7F7;
+    --lighter-orange: #FFF4CF;
+    --light-orange:#FFCB42;
+    --orange:#FFB200;
+    --blue:#277BC0;
+    --dark-blue:#035190;
+  
+  }
+  
+
+.popup{
+    background-color: #fff;
+    width: 450px;
+    padding: 30px 40px;
+    position: fixed;
+    z-index: 999;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.6);
+}
+
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #000000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup p{
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0;
+    line-height: 25px;
+}
+
+.info-btns button a{
+    box-shadow: 1px 10px 17px -9px #FFB200;
+	background:linear-gradient(to bottom, #FFCB42 5%, #FFCB42 100%);
+	background-color:#FFCB42;
+	border-radius:18px;
+	border:1px solid #277BC0;
+	display:inline-block;
+	cursor:pointer;
+	color:#277BC0;
+	font-size:16px;
+	font-weight:bold;
+	padding:14px 28px;
+	text-decoration:none;
+}
+
+.info-btns button a:hover {
+    background:linear-gradient(to bottom, #FFCB42 5%, #FFCB42 100%);
+	background-color:#FFCB42;
+  }
+
+  
+
